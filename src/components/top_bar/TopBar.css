@@ -1,0 +1,12 @@
+.TopBar {
+    background-color: black;
+    display: flex;
+    position: sticky;
+    top: 0%;
+}
+
+.TopBar a {
+    border: 1px solid rebeccapurple;
+    color: white;
+    flex-basis: 100%;
+}
