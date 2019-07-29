@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cde70a08166b806ca02d2be2c7ce1ffe",
+    "revision": "0924ff3fe1d9c7187a5ea945f97d8c55",
     "url": "/pweb/index.html"
   },
   {
-    "revision": "0df53261a3c67a4d4415",
-    "url": "/pweb/static/css/main.b3149202.chunk.css"
+    "revision": "40ef05899d5b407ca3c9",
+    "url": "/pweb/static/css/main.30eb3082.chunk.css"
   },
   {
-    "revision": "7db911faebd2f3500565",
-    "url": "/pweb/static/js/2.479fc036.chunk.js"
+    "revision": "2a030385037c72458674",
+    "url": "/pweb/static/js/2.07af2cd4.chunk.js"
   },
   {
-    "revision": "0df53261a3c67a4d4415",
-    "url": "/pweb/static/js/main.d972d1ce.chunk.js"
+    "revision": "40ef05899d5b407ca3c9",
+    "url": "/pweb/static/js/main.60b3e17f.chunk.js"
   },
   {
     "revision": "d3482088402870690e22",
     "url": "/pweb/static/js/runtime~main.29d8cff5.js"
+  },
+  {
+    "revision": "a14a6aee37f2974d71c1b5c2e0ca3e05",
+    "url": "/pweb/static/media/email.a14a6aee.svg"
   },
   {
     "revision": "617870e422d4b75087cdcf9ff298032e",
