@@ -8,12 +8,12 @@
     top: 0%;
 }
 
-.TopBar a, .MyName, .DevLink, .PerLink {
+.TopBar a, .MyName, .DevLink {
     color: white;
     flex-basis: 100%;
 }
 
-.TopBar a:hover, .MyName:hover, .DevLink:hover, .PerLink:hover {
+.TopBar a:hover, .MyName:hover, .DevLink:hover {
     background-color: rgb(239, 233, 235);
 }
 
@@ -34,12 +34,12 @@
     color: rgb(10, 159, 157);
 }
 
-.DevLinkImg, .PerLinkImg {
+.DevLinkImg {
     width: 75%;
     height: 75%;
 }
 
-.DevLink, .PerLink {
+.DevLink {
     display: flex;
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */

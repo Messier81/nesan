@@ -4,8 +4,8 @@ import MyName from './MyName'
 import DevLink from './DevLink'
 import githubLOGO from './github.svg'
 import liLOGO from './linkedin.svg'
-import PerLink from './PerLink';
 import resumeLOGO from './resume.svg'
+import emailLOGO from './email.svg'
 
 function TopBar() {
     return (
@@ -21,14 +21,16 @@ function TopBar() {
                 imgURL={liLOGO}
                 imgALT="LinkedIn Logo"
             />
-            <PerLink
+            <DevLink
+                devURL="https://www.linkedin.com/in/sivanesan-vettivel-992318182/"
                 imgURL={resumeLOGO}
                 imgALT="Resume"
             />
-
-            <a href="/">Login</a>
-
-            <a href="/">Login</a>
+            <DevLink
+                devURL="https://www.linkedin.com/in/sivanesan-vettivel-992318182/"
+                imgURL={emailLOGO}
+                imgALT="Contact Me"
+            />
         </nav>
     )
 }
