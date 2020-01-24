@@ -13,7 +13,7 @@ function TopBar() {
             <MyName />
             <DevLink
                 devURL="https://github.com/Messier81"
-                imgURL={githubLOGO}
+                imgURL={liLOGO}
                 imgALT="GitHub Logo"
             />
             <DevLink
@@ -23,12 +23,12 @@ function TopBar() {
             />
             <DevLink
                 devURL="https://www.linkedin.com/in/sivanesan-vettivel-992318182/"
-                imgURL={resumeLOGO}
+                imgURL={liLOGO}
                 imgALT="Resume"
             />
             <DevLink
                 devURL="https://www.linkedin.com/in/sivanesan-vettivel-992318182/"
-                imgURL={emailLOGO}
+                imgURL={liLOGO}
                 imgALT="Contact Me"
             />
         </nav>
