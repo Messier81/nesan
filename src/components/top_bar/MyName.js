@@ -2,7 +2,7 @@ import React from 'react'
 
 function MyName() {
     return (
-        <div className="MyName"><span className="FName">Sivanesan</span><span>&nbsp;</span><span className="LName">Vettivel</span></div>
+        <div className="MyName"><span className="FName">Nesan</span><span>&nbsp;</span><span className="LName">Vettivel</span></div>
     )
 }
 
