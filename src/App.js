@@ -1,11 +1,12 @@
 import React from 'react'
 import './App.css'
+import Front from './comps/Front'
 
 function App() {
   return (
     <div className="App">
-      <h1>Hi</h1>
-    </div>
+      <Front />
+    </div >
   )
 }
 
