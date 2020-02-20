@@ -12,6 +12,9 @@ function Nav() {
                 <Link to="/">
                     <li>Home</li>
                 </Link>
+                <Link to="/projects">
+                    <li>Projects</li>
+                </Link>
                 <li><a href="https://github.com/Messier81">GitHub</a></li>
                 <li><a href="https://github.com/Messier81">Resume</a></li>
                 <Link to="/contact">

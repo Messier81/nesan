@@ -1,7 +1,7 @@
 .nav-main {
     font-weight: bold;
     display: flex;
-    border-bottom: dashed 1pt black;
+    border-bottom: solid 1px black;
 }
 
 .nav-links {
@@ -13,4 +13,14 @@
 
 .nav-links a {
     text-decoration: none;
+}
+
+
+.nav-links a:hover {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+.Contact {
+    color: #f542a7;
 }
