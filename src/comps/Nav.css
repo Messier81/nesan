@@ -1,16 +1,16 @@
-nav {
+.nav-main {
+    font-weight: bold;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 10vh;
-    background: red;
-    color: white;
+    border-bottom: dashed 1pt black;
 }
 
 .nav-links {
-    width: 50%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    width: 100%;
     list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
 }

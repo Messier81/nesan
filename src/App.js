@@ -11,19 +11,12 @@ function App() {
       <div className="App">
         <Nav />
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={Front} />
+          <Route path="/" exact component={Front} />
           <Route path="/contact" component={Contact} />
         </Switch>
       </div >
     </Router>
   )
 }
-
-const Home = () => (
-  <div>
-    <h1>HELLO WORLD</h1>
-  </div>
-)
 
 export default App
