@@ -17,6 +17,7 @@ function Nav() {
                 </Link>
                 <li><a href="https://github.com/Messier81">GitHub</a></li>
                 <li><a href="https://github.com/Messier81">Resume</a></li>
+                <li><a href="https://github.com/Messier81">LinkedIn</a></li>
                 <Link to="/contact">
                     <li>Contact</li>
                 </Link>
