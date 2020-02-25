@@ -1,9 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Projects() {
     return (
         <div className="Projects">
-            <h1>plz email me at nesanyorku@gmail.com</h1>
+            <Link to="/lecrec">
+                <li>Lecture Recorder</li>
+            </Link>
         </div >
     )
 }

@@ -1,6 +1,8 @@
 .nav-main {
     font-weight: bold;
     border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .nav-links {
@@ -18,4 +20,8 @@
 
 .nav-links a:hover {
     text-decoration: underline dashed;
+}
+
+.Contact {
+    color: orangered;
 }

@@ -6,7 +6,7 @@ function Front() {
             <br />
             <h1>Hi, I'm Nesan.</h1>
             <br />
-            <h1>I'm a programmer and a musician living in Toronto.</h1>
+            <h3>I'm a programmer and a musician living in Toronto.</h3>
         </div >
     )
 }
