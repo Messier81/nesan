@@ -4,7 +4,7 @@ import Front from './comps/Front'
 import Nav from './comps/Nav'
 import Contact from './comps/Contact'
 import Projects from './comps/Projects'
-import LecRec from './comps/lecrec/LecRec'
+import MuNote from './comps/munote/MuNote'
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
@@ -15,9 +15,10 @@ function App() {
         <Nav />
         <Switch>
           <Route path="/" exact component={Front} />
+          <Route path="/pweb/" exact component={Front} />
           <Route path="/contact" component={Contact} />
           <Route path="/projects" component={Projects} />
-          <Route path="/lecrec" component={LecRec} />
+          <Route path="/munote" component={MuNote} />
         </Switch>
       </div >
     </Router>
