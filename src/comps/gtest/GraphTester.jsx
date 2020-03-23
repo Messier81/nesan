@@ -6,7 +6,7 @@ class GraphTester extends React.Component {
   render() {
     return (
       <div className="GraphTester">
-        <Graph numberOfVertices={["A", "B"]} />
+        <Graph />
       </div>
     );
   }
