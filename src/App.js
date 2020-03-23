@@ -1,12 +1,12 @@
-import React from 'react'
-import './App.css'
-import Front from './comps/Front'
-import Nav from './comps/Nav'
-import Contact from './comps/Contact'
-import Projects from './comps/Projects'
-import MuNote from './comps/munote/MuNote'
+import React from "react";
+import "./App.css";
+import Front from "./comps/Front";
+import Nav from "./comps/Nav";
+import Contact from "./comps/Contact";
+import Projects from "./comps/Projects";
+import GraphTester from "./comps/gtest/GraphTester";
 
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -18,11 +18,11 @@ function App() {
           <Route path="/pweb/" exact component={Front} />
           <Route path="/contact" component={Contact} />
           <Route path="/projects" component={Projects} />
-          <Route path="/munote" component={MuNote} />
+          <Route path="/gtest" component={GraphTester} />
         </Switch>
-      </div >
+      </div>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;
