@@ -1,12 +1,11 @@
-import React from 'react'
+import React, { Component } from "react";
 
-function Front() {
+export default class Front extends Component {
+  render() {
     return (
-        <div className="Front">
-            <br />
-            <h1>Hi, I'm Nesan.</h1>
-        </div >
-    )
+      <div>
+        <h1>Hi, I'm Nesan.</h1>
+      </div>
+    );
+  }
 }
-
-export default Front
