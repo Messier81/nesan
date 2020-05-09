@@ -27,16 +27,18 @@ export default class RIV extends Component {
 
   render() {
     return (
-      <div className="masonry">
-        {this.state.data ? (
-          this.state.data.data.children.map((value, index) => (
-            <div className="masonry-brick">
-              <img src={value.data.url} alt={value.data.url} key={index} />
-            </div>
-          ))
-        ) : (
-          <div>LOAD</div>
-        )}
+      <div className="wrapper">
+        <div class="grid-container">
+          {this.state.data ? (
+            this.state.data.data.children.map((value, index) => (
+              <div className="item">
+                <img src={value.data.url} alt={value.data.url} key={index} />
+              </div>
+            ))
+          ) : (
+            <div>LOAD</div>
+          )}
+        </div>
       </div>
     );
   }
