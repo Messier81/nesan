@@ -1,0 +1,25 @@
+.outside {
+  display: flex;
+  background-color: pink;
+}
+
+.outside > div {
+  width: 50%;
+  height: 500px;
+}
+
+.terminal {
+  border: 1px solid black;
+}
+
+.masonry {
+  display: flex;
+  flex-flow: column wrap;
+  max-height: 800px;
+  margin-left: -8px; /* Adjustment for the gutter */
+  width: 100%;
+}
+
+.masonry-brick {
+  margin: 0 8px 8px 0; /* Some gutter */
+}
