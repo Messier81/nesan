@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./RIV.css";
+import InfiniteScroll from "react-infinite-scroll-component";
 
 export default class RIV extends Component {
   constructor(props) {
@@ -18,7 +19,13 @@ export default class RIV extends Component {
     fetch("https://www.reddit.com/r/art/.json?limit=100")
       .then((response) => response.json())
       .then((responseJson) => {
-        this.setState({ data: responseJson });
+        let tmpArray = [];
+        let rJ = responseJson.data.children;
+        for (var i = 0; i < rJ.length; i++) {
+          tmpArray.push(rJ[i].data.url);
+        }
+
+        this.setState({ data: tmpArray });
       })
       .catch((error) => {
         console.error(error);
@@ -28,11 +35,11 @@ export default class RIV extends Component {
   render() {
     return (
       <div className="wrapper">
-        <div class="grid-container">
+        <div className="grid-container">
           {this.state.data ? (
-            this.state.data.data.children.map((value, index) => (
+            this.state.data.slice(0, 20).map((value, index) => (
               <div className="item">
-                <img src={value.data.url} alt={value.data.url} key={index} />
+                <img src={value} alt={value} key={index} />
               </div>
             ))
           ) : (
