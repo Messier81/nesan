@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./RIV.css";
-import InfiniteScroll from "react-infinite-scroll-component";
 
 export default class RIV extends Component {
   constructor(props) {
@@ -11,12 +10,21 @@ export default class RIV extends Component {
     };
   }
 
-  componentWillMount() {
-    this.renderMyData();
+  componentDidMount() {
+    //this.renderMyData();
   }
 
-  renderMyData() {
-    fetch("https://www.reddit.com/r/art/.json?limit=100")
+  sayHi = (subR) => {
+    alert(subR);
+  };
+
+  renderMyData = (test, lim) => {
+    var url = new URL(`https://www.reddit.com/r/${test}/.json`),
+      params = { limit: lim };
+    Object.keys(params).forEach((key) =>
+      url.searchParams.append(key, params[key])
+    );
+    fetch(url)
       .then((response) => response.json())
       .then((responseJson) => {
         let tmpArray = [];
@@ -30,14 +38,16 @@ export default class RIV extends Component {
       .catch((error) => {
         console.error(error);
       });
-  }
+  };
 
   render() {
     return (
       <div className="wrapper">
+        <button onClick={() => this.renderMyData("art", 1)}>SEARCH</button>
+        <input type="text" name="name" />
         <div className="grid-container">
           {this.state.data ? (
-            this.state.data.slice(0, 20).map((value, index) => (
+            this.state.data.map((value, index) => (
               <div className="item">
                 <img src={value} alt={value} key={index} />
               </div>
