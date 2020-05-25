@@ -59,21 +59,18 @@ export default class RIV extends Component {
       <div className="wrapper">
         <button onClick={() => this.renderMyData(10)}>SEARCH</button>
         <input type="text" name="subR" onChange={this.handleInputChange} />
+
+        <button onClick={() => this.handlePicChange(-1)}>PREVIOUS</button>
+
+        <button onClick={() => this.handlePicChange(1)}>NEXT</button>
+
         {this.state.data ? (
           <div class="container">
-            <div>
-              <button onClick={() => this.handlePicChange(-1)}>PREVIOUS</button>
-            </div>
-            <div>
-              <img
-                className="img-fluid"
-                src={this.state.data[this.state.nextPic]}
-                alt="PIC ALT"
-              />
-            </div>
-            <div>
-              <button onClick={() => this.handlePicChange(1)}>NEXT</button>
-            </div>
+            <img
+              className="img-fluid"
+              src={this.state.data[this.state.nextPic]}
+              alt="PIC ALT"
+            />
           </div>
         ) : (
           <div>LOAD</div>

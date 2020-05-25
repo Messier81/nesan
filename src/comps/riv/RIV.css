@@ -1,23 +1,13 @@
-.wrapper {
-  border: 1px solid red;
-}
 .container {
-  display: flex; /* establish flex container */
-  flex-direction: row; /* default value; can be omitted */
-  flex-wrap: nowrap; /* default value; can be omitted */
-  justify-content: space-between; /* switched from default (flex-start, see below) */
-  background-color: lightyellow;
-  max-height: 80vh;
-  height: auto;
+  width: 100vw;
+  height: 80vh;
+  background: yellow;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
-.container > div {
-  border: 2px dashed red;
-
-  max-height: 75vh;
+.container > img {
+  max-width: 100%;
   height: auto;
-}
-
-.img-fluid {
-  max-height: 75vh;
-  height: auto;
+  max-height: 100%;
 }
