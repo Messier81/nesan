@@ -7,19 +7,17 @@ export default class RIV extends Component {
 
     this.state = {
       data: null,
+      subR: "",
+      nextPic: 0,
     };
   }
 
-  componentDidMount() {
-    //this.renderMyData();
-  }
+  // componentDidMount() {
+  //   this.renderMyData();
+  // }
 
-  sayHi = (subR) => {
-    alert(subR);
-  };
-
-  renderMyData = (test, lim) => {
-    var url = new URL(`https://www.reddit.com/r/${test}/.json`),
+  renderMyData = (lim) => {
+    var url = new URL(`https://www.reddit.com/r/${this.state.subR}/.json`),
       params = { limit: lim };
     Object.keys(params).forEach((key) =>
       url.searchParams.append(key, params[key])
@@ -40,22 +38,50 @@ export default class RIV extends Component {
       });
   };
 
+  handleInputChange = (event) => {
+    const target = event.target;
+    const value = target.value;
+    const name = target.name;
+
+    this.setState({
+      [name]: value,
+    });
+  };
+
+  handlePicChange = (addV) => {
+    this.setState({
+      nextPic: this.state.nextPic + addV,
+    });
+  };
+
   render() {
     return (
       <div className="wrapper">
-        <button onClick={() => this.renderMyData("art", 1)}>SEARCH</button>
-        <input type="text" name="name" />
-        <div className="grid-container">
-          {this.state.data ? (
-            this.state.data.map((value, index) => (
-              <div className="item">
-                <img src={value} alt={value} key={index} />
-              </div>
-            ))
-          ) : (
-            <div>LOAD</div>
-          )}
-        </div>
+        <button onClick={() => this.renderMyData(10)}>SEARCH</button>
+        <input type="text" name="subR" onChange={this.handleInputChange} />
+        {this.state.data ? (
+          <div class="container">
+            <div>
+              <button className="left" onClick={() => this.handlePicChange(-1)}>
+                PREVIOUS
+              </button>
+            </div>
+            <div>
+              <img
+                className="center"
+                src={this.state.data[this.state.nextPic]}
+                alt="PIC ALT"
+              />
+            </div>
+            <div>
+              <button className="right" onClick={() => this.handlePicChange(1)}>
+                NEXT
+              </button>
+            </div>
+          </div>
+        ) : (
+          <div>LOAD</div>
+        )}
       </div>
     );
   }
