@@ -62,21 +62,17 @@ export default class RIV extends Component {
         {this.state.data ? (
           <div class="container">
             <div>
-              <button className="left" onClick={() => this.handlePicChange(-1)}>
-                PREVIOUS
-              </button>
+              <button onClick={() => this.handlePicChange(-1)}>PREVIOUS</button>
             </div>
             <div>
               <img
-                className="center"
+                className="img-fluid"
                 src={this.state.data[this.state.nextPic]}
                 alt="PIC ALT"
               />
             </div>
             <div>
-              <button className="right" onClick={() => this.handlePicChange(1)}>
-                NEXT
-              </button>
+              <button onClick={() => this.handlePicChange(1)}>NEXT</button>
             </div>
           </div>
         ) : (
