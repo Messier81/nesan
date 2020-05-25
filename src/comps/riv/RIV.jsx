@@ -59,25 +59,18 @@ export default class RIV extends Component {
   render() {
     return (
       <div className="wrapper">
-        <div className="topNav">
-          <div>
-            <Link to="/">
-              <button>Home</button>
-            </Link>
-          </div>
-          <div>
-            <div>
-              <button onClick={() => this.renderMyData(10)}>SEARCH</button>
-            </div>
-            <div>
-              <input
-                type="text"
-                name="subR"
-                onChange={this.handleInputChange}
-              />
-            </div>
-          </div>
-        </div>
+        <Link to="/" className="topNav">
+          <button>Home</button>
+        </Link>
+        <button className="topNav" onClick={() => this.renderMyData(10)}>
+          SEARCH
+        </button>
+        <input
+          className="topNav"
+          type="text"
+          name="subR"
+          onChange={this.handleInputChange}
+        />
 
         {this.state.data ? (
           <div class="container">
