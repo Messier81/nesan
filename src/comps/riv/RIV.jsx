@@ -31,8 +31,8 @@ export default class RIV extends Component {
         for (var i = 0; i < rJ.length; i++) {
           tmpArray.push(rJ[i].data.url);
         }
-
-        this.setState({ data: tmpArray });
+        //DELETE NEXTPIC, FOR TESTING PURPOSES ONLY
+        this.setState({ data: tmpArray, nextPic: 0 });
       })
       .catch((error) => {
         console.error(error);
@@ -60,11 +60,11 @@ export default class RIV extends Component {
     return (
       <div className="wrapper">
         <Link to="/" className="topNav">
-          <button>Home</button>
+          <span>Home</span>
         </Link>
-        <button className="topNav" onClick={() => this.renderMyData(10)}>
-          SEARCH
-        </button>
+        <span className="topNav" onClick={() => this.renderMyData(100)}>
+          Search
+        </span>
         <input
           className="topNav"
           type="text"
@@ -77,16 +77,20 @@ export default class RIV extends Component {
             <img
               className="img-fluid"
               src={this.state.data[this.state.nextPic]}
-              alt="PIC ALT"
+              alt=""
             />
           </div>
         ) : (
           <div>LOAD</div>
         )}
-
-        <button onClick={() => this.handlePicChange(-1)}>PREVIOUS</button>
-
-        <button onClick={() => this.handlePicChange(1)}>NEXT</button>
+        <div className="botNavCont">
+          <span className="botNav" onClick={() => this.handlePicChange(-1)}>
+            Previous
+          </span>
+          <span className="botNav" onClick={() => this.handlePicChange(1)}>
+            Next
+          </span>
+        </div>
       </div>
     );
   }
