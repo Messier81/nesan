@@ -11,3 +11,14 @@
   height: auto;
   max-height: 100%;
 }
+
+.topNav {
+  display: flex;
+}
+
+.topNav > div,
+.topNav > div > div {
+  display: flex;
+  width: 45%;
+  background-color: red;
+}
