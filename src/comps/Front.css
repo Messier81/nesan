@@ -5,5 +5,12 @@
 .mainTitle {
   background: url("./pics/toronto.jpg");
   height: 100vh;
+  width: 100vw;
   background-size: cover;
+}
+
+@media (max-width: 320px) {
+  .mainTitle {
+    height: 50vh;
+  }
 }
