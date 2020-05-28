@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pweb/static/css/main.5184fc17.chunk.css",
+    "main.css": "/pweb/static/css/main.1fbcbe52.chunk.css",
     "main.js": "/pweb/static/js/main.5cda3430.chunk.js",
     "main.js.map": "/pweb/static/js/main.5cda3430.chunk.js.map",
     "runtime-main.js": "/pweb/static/js/runtime-main.a0b65237.js",
@@ -8,16 +8,16 @@
     "static/js/2.77611799.chunk.js": "/pweb/static/js/2.77611799.chunk.js",
     "static/js/2.77611799.chunk.js.map": "/pweb/static/js/2.77611799.chunk.js.map",
     "index.html": "/pweb/index.html",
-    "precache-manifest.042a074692e525d4217b190accda90cb.js": "/pweb/precache-manifest.042a074692e525d4217b190accda90cb.js",
+    "precache-manifest.c9f7ac059029d0e9771eed383ec47585.js": "/pweb/precache-manifest.c9f7ac059029d0e9771eed383ec47585.js",
     "service-worker.js": "/pweb/service-worker.js",
-    "static/css/main.5184fc17.chunk.css.map": "/pweb/static/css/main.5184fc17.chunk.css.map",
+    "static/css/main.1fbcbe52.chunk.css.map": "/pweb/static/css/main.1fbcbe52.chunk.css.map",
     "static/js/2.77611799.chunk.js.LICENSE.txt": "/pweb/static/js/2.77611799.chunk.js.LICENSE.txt",
     "static/media/Front.css": "/pweb/static/media/toronto.c5fccd04.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.a0b65237.js",
     "static/js/2.77611799.chunk.js",
-    "static/css/main.5184fc17.chunk.css",
+    "static/css/main.1fbcbe52.chunk.css",
     "static/js/main.5cda3430.chunk.js"
   ]
 }
