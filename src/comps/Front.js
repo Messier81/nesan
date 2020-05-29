@@ -4,8 +4,13 @@ import "./Front.css";
 export default class Front extends Component {
   render() {
     return (
-      <div>
-        <div className="mainTitle">ai</div>
+      <div className="frontMain">
+        <div className="mainTitle">
+          <div className="navButtons">Projects</div>
+          <div className="mainDescription">Nesan V</div>
+          <div className="mainLinks">Github LinkedIn</div>
+        </div>
+        <div>hi</div>
       </div>
     );
   }

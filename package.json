@@ -2,7 +2,7 @@
   "name": "pweb",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Messier81.github.io/pweb/",
+  "homepage": "https://Messier81.github.io",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

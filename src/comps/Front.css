@@ -1,7 +1,14 @@
-.body {
+body,
+html {
   margin: 0;
   padding: 0;
 }
+/* Due to vh and vw in the front page */
+.frontMain {
+  overflow-x: hidden;
+}
+
+/* Use background image to cover viewpoint */
 .mainTitle {
   background: url("./pics/toronto.jpg");
   height: 100vh;
@@ -9,8 +16,17 @@
   background-size: cover;
 }
 
-@media (max-width: 320px) {
-  .mainTitle {
-    height: 50vh;
-  }
+.navButtons {
+  height: 25%;
+  background-color: red;
+}
+
+.mainDescription {
+  height: 50%;
+  background-color: blue;
+}
+
+.mainLinks {
+  height: 25%;
+  background-color: yellow;
 }
