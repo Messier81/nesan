@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/pweb/static/css/main.1fbcbe52.chunk.css",
-    "main.js": "/pweb/static/js/main.35dd33dc.chunk.js",
-    "main.js.map": "/pweb/static/js/main.35dd33dc.chunk.js.map",
+    "main.css": "/pweb/static/css/main.e726cfa7.chunk.css",
+    "main.js": "/pweb/static/js/main.2cf2ebaa.chunk.js",
+    "main.js.map": "/pweb/static/js/main.2cf2ebaa.chunk.js.map",
     "runtime-main.js": "/pweb/static/js/runtime-main.a0b65237.js",
     "runtime-main.js.map": "/pweb/static/js/runtime-main.a0b65237.js.map",
     "static/js/2.77611799.chunk.js": "/pweb/static/js/2.77611799.chunk.js",
     "static/js/2.77611799.chunk.js.map": "/pweb/static/js/2.77611799.chunk.js.map",
     "index.html": "/pweb/index.html",
-    "precache-manifest.4853003973f44a1561aeb2b004835faa.js": "/pweb/precache-manifest.4853003973f44a1561aeb2b004835faa.js",
+    "precache-manifest.23bdef96c064a2c71fef084953c0e34c.js": "/pweb/precache-manifest.23bdef96c064a2c71fef084953c0e34c.js",
     "service-worker.js": "/pweb/service-worker.js",
-    "static/css/main.1fbcbe52.chunk.css.map": "/pweb/static/css/main.1fbcbe52.chunk.css.map",
+    "static/css/main.e726cfa7.chunk.css.map": "/pweb/static/css/main.e726cfa7.chunk.css.map",
     "static/js/2.77611799.chunk.js.LICENSE.txt": "/pweb/static/js/2.77611799.chunk.js.LICENSE.txt",
     "static/media/Front.css": "/pweb/static/media/toronto.c5fccd04.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.a0b65237.js",
     "static/js/2.77611799.chunk.js",
-    "static/css/main.1fbcbe52.chunk.css",
-    "static/js/main.35dd33dc.chunk.js"
+    "static/css/main.e726cfa7.chunk.css",
+    "static/js/main.2cf2ebaa.chunk.js"
   ]
 }
