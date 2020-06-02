@@ -2,9 +2,11 @@
   "name": "pweb",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Messier81.github.io",
+  "homepage": "https://messier81.github.io",
   "dependencies": {
+    "bootstrap": "^4.5.0",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.1",
     "react-dom": "^16.8.6",
     "react-infinite-scroll-component": "^5.0.4",
     "react-router": "^5.1.2",
