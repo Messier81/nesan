@@ -1,8 +1,8 @@
 {
-  "name": "pweb",
+  "name": "nesan",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://messier81.github.io",
+  "homepage": "https://messier81.github.io/nesan/",
   "dependencies": {
     "bootstrap": "^4.5.0",
     "react": "^16.8.6",
